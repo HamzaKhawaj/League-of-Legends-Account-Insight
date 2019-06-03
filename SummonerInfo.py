@@ -1,8 +1,8 @@
 import requests
 
 # API Keys generated from https://developer.riotgames.com
-# API Key for 'He Stay' = "RGAPI-9449a3b2-b9f3-4542-b2af-9e71c08185a4"
-# API Key for 'Headhunter Rengo' = "RGAPI-510595fc-a97e-488d-9d4d-ad7d7d57f8c1"
+# API Key for 'He Stay' = "RGAPI-9449a3b2-b9f3-4542-b2af-9e71c08185a4" -> Expired
+# API Key for 'Headhunter Rengo' = "RGAPI-510595fc-a97e-488d-9d4d-ad7d7d57f8c1" -> Expired
 
 def requestSummonerData(summonerName, APIKey):
     # URL Creation
@@ -34,7 +34,6 @@ def main():
     # Override summonerName via input in case they didn't put capitals in their name
     summonerName = responseJSON['name']
     summonerLevel = str(responseJSON['summonerLevel'])
-    # sumlevel = responseJSON['summonerLevel']
     encryptedSummonerId = responseJSON['id']
 
     # Get ranked information only if they are able to play ranked (must be level 30 or higher for ranked games)
