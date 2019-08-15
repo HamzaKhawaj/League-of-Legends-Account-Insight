@@ -1,8 +1,6 @@
 import requests
 
 # API Keys generated from https://developer.riotgames.com
-# API Key for 'He Stay' = "RGAPI-9449a3b2-b9f3-4542-b2af-9e71c08185a4" -> Expired
-# API Key for 'Headhunter Rengo' = "RGAPI-510595fc-a97e-488d-9d4d-ad7d7d57f8c1" -> Expired
 
 def requestSummonerData(summonerName, APIKey):
     # URL Creation
